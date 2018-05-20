@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Win10Tweak", "Win10Tweak.vcxproj", "{FAE29035-75E4-4F76-BF2D-B3537B0BF9CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FAE29035-75E4-4F76-BF2D-B3537B0BF9CC}.Debug|x64.ActiveCfg = Debug|x64
+		{FAE29035-75E4-4F76-BF2D-B3537B0BF9CC}.Debug|x64.Build.0 = Debug|x64
+		{FAE29035-75E4-4F76-BF2D-B3537B0BF9CC}.Release|x64.ActiveCfg = Release|x64
+		{FAE29035-75E4-4F76-BF2D-B3537B0BF9CC}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

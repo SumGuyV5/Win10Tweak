@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="Debug|x64">
+			<Configuration>Debug</Configuration>
+			<Platform>x64</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="Release|x64">
+			<Configuration>Release</Configuration>
+			<Platform>x64</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<ProjectGuid>{FAE29035-75E4-4F76-BF2D-B3537B0BF9CC}</ProjectGuid>
+		<Keyword>Win32Proj</Keyword>
+		<WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+		<Configuration>Debug</Configuration>
+		<ConfigurationType>Application</ConfigurationType>
+		<UseDebugLibraries>true</UseDebugLibraries>
+		<CharacterSet>Unicode</CharacterSet>
+		<PlatformToolset>v141</PlatformToolset>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+		<Configuration>Release</Configuration>
+		<ConfigurationType>Application</ConfigurationType>
+		<UseDebugLibraries>false</UseDebugLibraries>
+		<WholeProgramOptimization>true</WholeProgramOptimization>
+		<CharacterSet>Unicode</CharacterSet>
+		<PlatformToolset>v141</PlatformToolset>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+	<ImportGroup Label="ExtensionSettings">
+	</ImportGroup>
+	<ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<PropertyGroup Label="UserMacros" />
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+		<LinkIncremental>true</LinkIncremental>
+		<OutDir>VCProjectDebug\</OutDir>
+		<IntDir>VCProjectDebug\</IntDir>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+		<LinkIncremental>false</LinkIncremental>
+		<OutDir>VCProjectRelease\</OutDir>
+		<IntDir>VCProjectRelease\</IntDir>
+	</PropertyGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+		<ClCompile>
+			<PrecompiledHeader>NotUsing</PrecompiledHeader>
+			<WarningLevel>Level4</WarningLevel>
+			<Optimization>Disabled</Optimization>
+			<PreprocessorDefinitions>NOPCH;WIN32;__WXMSW__;_WINDOWS;__WXDEBUG__;_DEBUG;_UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+			<AdditionalIncludeDirectories>C:\programming\wxWidgets-3.1.0/lib/vc_x64_lib/mswud;C:\programming\wxWidgets-3.1.0/include;C:\programming\wxWidgets-3.1.0/contrib/include;C:\Program Files (x86)\Windows Kits\10\include;C:\Program Files (x86)\Windows Kits\10\include\10.0.15063.0\um;C:\Program Files (x86)\Windows Kits\10\include\10.0.15063.0\shared;C:\Program Files (x86)\Windows Kits\10\include\10.0.15063.0\ucrt;C:\Program Files (x86)\Windows Kits\10\include\10.0.15063.0\winrt;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.10.25017\include</AdditionalIncludeDirectories>
+			<RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+		</ClCompile>
+		<Link>
+			<SubSystem>Windows</SubSystem>
+			<GenerateDebugInformation>true</GenerateDebugInformation>
+			<AdditionalLibraryDirectories>C:\programming\wxWidgets-3.1.0/lib/vc_x64_lib;C:\Program Files (x86)\Windows Kits\10\lib;C:\Program Files (x86)\Windows Kits\10\lib\10.0.15063.0\um\x64;C:\Program Files (x86)\Windows Kits\10\lib\10.0.15063.0\um;C:\Program Files (x86)\Windows Kits\10\lib\10.0.15063.0\ucrt\x64;C:\Program Files (x86)\Windows Kits\10\lib\10.0.15063.0\ucrt;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.10.25017\lib\x64;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.10.25017\lib</AdditionalLibraryDirectories>
+			<AdditionalDependencies>;wxmsw31ud_xrc.lib;wxmsw31ud_richtext.lib;wxmsw31ud_aui.lib;wxmsw31ud_html.lib;wxmsw31ud_stc.lib;wxmsw31ud_propgrid.lib;wxmsw31ud_ribbon.lib;wxmsw31ud_core.lib;wxbase31ud.lib;wxtiffd.lib;wxjpegd.lib;wxpngd.lib;wxzlibd.lib;wxregexud.lib;wxmsw31ud_adv.lib;wxmsw31ud_html.lib;wxmsw31ud_xrc.lib;wxbase31ud_net.lib;wxbase31ud_xml.lib;wxexpatd.lib;kernel32.lib;user32.lib;gdi32.lib;comdlg32.lib;winspool.lib;winmm.lib;shell32.lib;comctl32.lib;ole32.lib;oleaut32.lib;uuid.lib;rpcrt4.lib;advapi32.lib;wsock32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+			<TargetMachine>MachineX64</TargetMachine>
+		</Link>
+		<ResourceCompile>
+			<AdditionalIncludeDirectories>C:\programming\wxWidgets-3.1.0/lib/vc_x64_lib/mswud;C:\programming\wxWidgets-3.1.0/include;C:\programming\wxWidgets-3.1.0/contrib/include;C:\Program Files (x86)\Windows Kits\10\include;C:\Program Files (x86)\Windows Kits\10\include\10.0.15063.0\um;C:\Program Files (x86)\Windows Kits\10\include\10.0.15063.0\shared;C:\Program Files (x86)\Windows Kits\10\include\10.0.15063.0\ucrt;C:\Program Files (x86)\Windows Kits\10\include\10.0.15063.0\winrt;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.10.25017\include</AdditionalIncludeDirectories>
+			<PreprocessorDefinitions>NOPCH;WIN32;__WXMSW__;_WINDOWS;__WXDEBUG__;_DEBUG;_UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+		</ResourceCompile>
+	</ItemDefinitionGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+		<ClCompile>
+			<PrecompiledHeader>NotUsing</PrecompiledHeader>
+			<WarningLevel>Level4</WarningLevel>
+			<Optimization>MaxSpeed</Optimization>
+			<FunctionLevelLinking>true</FunctionLevelLinking>
+			<IntrinsicFunctions>true</IntrinsicFunctions>
+			<PreprocessorDefinitions>NOPCH;WIN32;__WXMSW__;_WINDOWS;_UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+			<AdditionalIncludeDirectories>C:\programming\wxWidgets-3.1.0/lib/vc_x64_lib/mswu;C:\programming\wxWidgets-3.1.0/include;C:\programming\wxWidgets-3.1.0/contrib/include;C:\Program Files (x86)\Windows Kits\10\include;C:\Program Files (x86)\Windows Kits\10\include\10.0.15063.0\um;C:\Program Files (x86)\Windows Kits\10\include\10.0.15063.0\shared;C:\Program Files (x86)\Windows Kits\10\include\10.0.15063.0\ucrt;C:\Program Files (x86)\Windows Kits\10\include\10.0.15063.0\winrt;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.10.25017\include</AdditionalIncludeDirectories>
+			<RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+		</ClCompile>
+		<Link>
+			<SubSystem>Windows</SubSystem>
+			<GenerateDebugInformation>true</GenerateDebugInformation>
+			<EnableCOMDATFolding>true</EnableCOMDATFolding>
+			<OptimizeReferences>true</OptimizeReferences>
+			<AdditionalLibraryDirectories>C:\programming\wxWidgets-3.1.0/lib/vc_x64_lib;C:\Program Files (x86)\Windows Kits\10\lib;C:\Program Files (x86)\Windows Kits\10\lib\10.0.15063.0\um\x64;C:\Program Files (x86)\Windows Kits\10\lib\10.0.15063.0\um;C:\Program Files (x86)\Windows Kits\10\lib\10.0.15063.0\ucrt\x64;C:\Program Files (x86)\Windows Kits\10\lib\10.0.15063.0\ucrt;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.10.25017\lib\x64;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.10.25017\lib</AdditionalLibraryDirectories>
+			<AdditionalDependencies>;wxmsw31u_xrc.lib;wxmsw31u_richtext.lib;wxmsw31u_aui.lib;wxmsw31u_html.lib;wxmsw31u_stc.lib;wxmsw31u_propgrid.lib;wxmsw31u_ribbon.lib;wxmsw31u_core.lib;wxbase31u.lib;wxtiff.lib;wxjpeg.lib;wxpng.lib;wxzlib.lib;wxregexu.lib;wxmsw31u_adv.lib;wxmsw31u_html.lib;wxmsw31u_xrc.lib;wxbase31u_net.lib;wxbase31u_xml.lib;wxexpat.lib;kernel32.lib;user32.lib;gdi32.lib;comdlg32.lib;winspool.lib;winmm.lib;shell32.lib;comctl32.lib;ole32.lib;oleaut32.lib;uuid.lib;rpcrt4.lib;advapi32.lib;wsock32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+			<TargetMachine>MachineX64</TargetMachine>
+		</Link>
+		<ResourceCompile>
+			<AdditionalIncludeDirectories>C:\programming\wxWidgets-3.1.0/lib/vc_x64_lib/mswu;C:\programming\wxWidgets-3.1.0/include;C:\programming\wxWidgets-3.1.0/contrib/include;C:\Program Files (x86)\Windows Kits\10\include;C:\Program Files (x86)\Windows Kits\10\include\10.0.15063.0\um;C:\Program Files (x86)\Windows Kits\10\include\10.0.15063.0\shared;C:\Program Files (x86)\Windows Kits\10\include\10.0.15063.0\ucrt;C:\Program Files (x86)\Windows Kits\10\include\10.0.15063.0\winrt;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.10.25017\include</AdditionalIncludeDirectories>
+			<PreprocessorDefinitions>NOPCH;WIN32;__WXMSW__;_WINDOWS;_UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+		</ResourceCompile>
+	</ItemDefinitionGroup>
+	<ItemGroup>
+		<ClInclude Include="Load\LoadBase.hpp" />
+		<ClInclude Include="Load\PrivacySettingsLoad.hpp" />
+		<ClInclude Include="Load\RemoveApplicationLoad.hpp" />
+		<ClInclude Include="Load\ServiceTweaksLoad.hpp" />
+		<ClInclude Include="Load\UITweaksLoad.hpp" />
+		<ClInclude Include="LoadSaveBase.hpp" />
+		<ClInclude Include="Save\PrivacySettingsSave.hpp" />
+		<ClInclude Include="Save\RemoveApplicationSave.hpp" />
+		<ClInclude Include="Save\SaveBase.hpp" />
+		<ClInclude Include="Save\ServiceTweaksSave.hpp" />
+		<ClInclude Include="Save\UITweaksSave.hpp" />
+		<ClInclude Include="Settings\Settings.hpp" />
+		<ClInclude Include="win10tweak.hpp" />
+		<ClInclude Include="win10tweakapp.hpp" />
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="Load\LoadBase.cpp" />
+		<ClCompile Include="Load\PrivacySettingsLoad.cpp" />
+		<ClCompile Include="Load\RemoveApplicationLoad.cpp" />
+		<ClCompile Include="Load\ServiceTweaksLoad.cpp" />
+		<ClCompile Include="Load\UITweaksLoad.cpp" />
+		<ClCompile Include="LoadSaveBase.cpp" />
+		<ClCompile Include="Save\PrivacySettingsSave.cpp" />
+		<ClCompile Include="Save\RemoveApplicationSave.cpp" />
+		<ClCompile Include="Save\SaveBase.cpp" />
+		<ClCompile Include="Save\ServiceTweaksSave.cpp" />
+		<ClCompile Include="Save\UITweaksSave.cpp" />
+		<ClCompile Include="Settings\Settings.cpp" />
+		<ClCompile Include="app_resources.cpp" />
+		<ClCompile Include="resource.cpp" />
+		<ClCompile Include="win10tweak.cpp" />
+		<ClCompile Include="win10tweakapp.cpp" />
+	</ItemGroup>
+	<ItemGroup>
+		<ResourceCompile Include="Win10Tweak.rc" />
+	</ItemGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+	<ImportGroup Label="ExtensionTargets">
+	</ImportGroup>
+</Project>

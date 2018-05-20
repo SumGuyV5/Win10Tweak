@@ -1,0 +1,1040 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource version="2.3.0.1" xmlns="http://www.wxwidgets.org/wxxrc">
+    <object class="wxDialog" name="ID_WIN10TWEAK" subclass="Win10Tweak">
+        <style>wxCAPTION|wxRESIZE_BORDER|wxSYSTEM_MENU|wxCLOSE_BOX|wxTAB_TRAVERSAL</style>
+        <exstyle>wxWS_EX_VALIDATE_RECURSIVELY|wxWS_EX_BLOCK_EVENTS</exstyle>
+        <size>400,300</size>
+        <title>Win 10 Tweak</title>
+        <centered>1</centered>
+        <XRCED>
+            <events>EVT_INIT_DIALOG</events>
+        </XRCED>
+        <object class="wxBoxSizer">
+            <orient>wxVERTICAL</orient>
+            <object class="sizeritem">
+                <flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+                <border>5</border>
+                <object class="wxNotebook" name="ID_NOTEBOOK">
+                    <style>wxBK_DEFAULT</style>
+                    <object class="notebookpage">
+                        <label>Privacy Settings</label>
+                        <object class="wxPanel" name="ID_PANEL">
+                            <style>wxSUNKEN_BORDER|wxTAB_TRAVERSAL</style>
+                            <exstyle>wxWS_EX_VALIDATE_RECURSIVELY</exstyle>
+                            <object class="wxBoxSizer">
+                                <orient>wxHORIZONTAL</orient>
+                                <object class="sizeritem">
+                                    <flag>wxGROW|wxALL</flag>
+                                    <border>5</border>
+                                    <option>1</option>
+                                    <object class="wxBoxSizer">
+                                        <orient>wxVERTICAL</orient>
+                                        <object class="sizeritem">
+                                            <flag>wxGROW|wxALL</flag>
+                                            <border>5</border>
+                                            <object class="wxCheckBox" name="ID_CHECKBOX15">
+                                                <label>Allow Telemetry</label>
+                                                <checked>0</checked>
+                                            </object>
+                                        </object>
+                                        <object class="sizeritem">
+                                            <flag>wxGROW|wxALL</flag>
+                                            <border>5</border>
+                                            <object class="wxCheckBox" name="ID_CHECKBOX16">
+                                                <label>Wi-Fi Sense</label>
+                                                <checked>0</checked>
+                                            </object>
+                                        </object>
+                                        <object class="sizeritem">
+                                            <flag>wxGROW|wxALL</flag>
+                                            <border>5</border>
+                                            <object class="wxCheckBox" name="ID_CHECKBOX17">
+                                                <label>SmartScreen Filter</label>
+                                                <checked>0</checked>
+                                            </object>
+                                        </object>
+                                        <object class="sizeritem">
+                                            <flag>wxGROW|wxALL</flag>
+                                            <border>5</border>
+                                            <object class="wxCheckBox" name="ID_CHECKBOX18">
+                                                <label>Bing Search in Start Menu</label>
+                                                <checked>0</checked>
+                                            </object>
+                                        </object>
+                                        <object class="sizeritem">
+                                            <flag>wxGROW|wxALL</flag>
+                                            <border>5</border>
+                                            <object class="wxCheckBox" name="ID_CHECKBOX19">
+                                                <label>Location Tracking</label>
+                                                <checked>0</checked>
+                                            </object>
+                                        </object>
+                                        <object class="sizeritem">
+                                            <flag>wxGROW|wxALL</flag>
+                                            <border>5</border>
+                                            <object class="wxCheckBox" name="ID_CHECKBOX20">
+                                                <label>Feedback</label>
+                                                <checked>0</checked>
+                                            </object>
+                                        </object>
+                                        <object class="sizeritem">
+                                            <flag>wxGROW|wxALL</flag>
+                                            <border>5</border>
+                                            <object class="wxCheckBox" name="ID_CHECKBOX21">
+                                                <label>Advertising ID</label>
+                                                <checked>0</checked>
+                                            </object>
+                                        </object>
+                                        <object class="sizeritem">
+                                            <flag>wxGROW|wxALL</flag>
+                                            <border>5</border>
+                                            <object class="wxCheckBox" name="ID_CHECKBOX22">
+                                                <label>Cortana</label>
+                                                <checked>0</checked>
+                                            </object>
+                                        </object>
+                                        <object class="sizeritem">
+                                            <flag>wxGROW|wxALL</flag>
+                                            <border>5</border>
+                                            <object class="wxCheckBox" name="ID_CHECKBOX23">
+                                                <label>AutoLogger directory</label>
+                                                <checked>0</checked>
+                                            </object>
+                                        </object>
+                                        <object class="sizeritem">
+                                            <flag>wxGROW|wxALL</flag>
+                                            <border>5</border>
+                                            <object class="wxCheckBox" name="ID_CHECKBOX24">
+                                                <label>Diagnostics Tracking Service</label>
+                                                <checked>0</checked>
+                                            </object>
+                                        </object>
+                                        <object class="sizeritem">
+                                            <flag>wxGROW|wxALL</flag>
+                                            <border>5</border>
+                                            <object class="wxCheckBox" name="ID_CHECKBOX25">
+                                                <label>WAP Push Service</label>
+                                                <checked>0</checked>
+                                            </object>
+                                        </object>
+                                    </object>
+                                </object>
+                                <object class="sizeritem">
+                                    <flag>wxGROW|wxALL</flag>
+                                    <border>5</border>
+                                    <object class="wxStaticLine" name="wxID_STATIC">
+                                        <style>wxLI_VERTICAL</style>
+                                    </object>
+                                </object>
+                                <object class="sizeritem">
+                                    <flag>wxGROW|wxALL</flag>
+                                    <border>5</border>
+                                    <option>1</option>
+                                    <object class="wxBoxSizer">
+                                        <orient>wxVERTICAL</orient>
+                                        <object class="sizeritem">
+                                            <flag>wxGROW|wxALL</flag>
+                                            <border>5</border>
+                                            <object class="wxRadioBox" name="ID_RADIOBOX9">
+                                                <style>wxRA_SPECIFY_COLS</style>
+                                                <label>Windows Update P2P</label>
+                                                <dimension>1</dimension>
+                                                <selection>0</selection>
+                                                <content>
+                                                    <item>&amp;Local network</item>
+                                                    <item>&amp;Internet</item>
+                                                </content>
+                                            </object>
+                                        </object>
+                                    </object>
+                                </object>
+                            </object>
+                        </object>
+                    </object>
+                    <object class="notebookpage">
+                        <label>Service Tweaks</label>
+                        <object class="wxPanel" name="ID_PANEL1">
+                            <style>wxSUNKEN_BORDER|wxTAB_TRAVERSAL</style>
+                            <exstyle>wxWS_EX_VALIDATE_RECURSIVELY</exstyle>
+                            <object class="wxBoxSizer">
+                                <orient>wxHORIZONTAL</orient>
+                                <object class="sizeritem">
+                                    <flag>wxGROW|wxALL</flag>
+                                    <border>5</border>
+                                    <object class="wxBoxSizer">
+                                        <orient>wxVERTICAL</orient>
+                                        <object class="sizeritem">
+                                            <flag>wxGROW|wxALL</flag>
+                                            <border>5</border>
+                                            <object class="wxCheckBox" name="ID_CHECKBOX26">
+                                                <label>Sharing mapped drives between users</label>
+                                                <checked>0</checked>
+                                            </object>
+                                        </object>
+                                        <object class="sizeritem">
+                                            <flag>wxGROW|wxALL</flag>
+                                            <border>5</border>
+                                            <object class="wxCheckBox" name="ID_CHECKBOX27">
+                                                <label>Firewall</label>
+                                                <checked>0</checked>
+                                            </object>
+                                        </object>
+                                        <object class="sizeritem">
+                                            <flag>wxGROW|wxALL</flag>
+                                            <border>5</border>
+                                            <object class="wxCheckBox" name="ID_CHECKBOX28">
+                                                <label>Windows Defender</label>
+                                                <checked>0</checked>
+                                            </object>
+                                        </object>
+                                        <object class="sizeritem">
+                                            <flag>wxGROW|wxALL</flag>
+                                            <border>5</border>
+                                            <object class="wxCheckBox" name="ID_CHECKBOX29">
+                                                <label>Windows Update automatic restart</label>
+                                                <checked>0</checked>
+                                            </object>
+                                        </object>
+                                        <object class="sizeritem">
+                                            <flag>wxGROW|wxALL</flag>
+                                            <border>5</border>
+                                            <object class="wxCheckBox" name="ID_CHECKBOX30">
+                                                <label>Home Groups services</label>
+                                                <checked>0</checked>
+                                            </object>
+                                        </object>
+                                        <object class="sizeritem">
+                                            <flag>wxGROW|wxALL</flag>
+                                            <border>5</border>
+                                            <object class="wxCheckBox" name="ID_CHECKBOX31">
+                                                <label>Remote Assistance</label>
+                                                <checked>0</checked>
+                                            </object>
+                                        </object>
+                                        <object class="sizeritem">
+                                            <flag>wxGROW|wxALL</flag>
+                                            <border>5</border>
+                                            <object class="wxCheckBox" name="ID_CHECKBOX32">
+                                                <label>Remote Desktop w/o Network Level Authentication</label>
+                                                <checked>0</checked>
+                                            </object>
+                                        </object>
+                                    </object>
+                                </object>
+                                <object class="sizeritem">
+                                    <flag>wxGROW|wxALL</flag>
+                                    <border>5</border>
+                                    <object class="wxStaticLine" name="wxID_STATIC">
+                                        <style>wxLI_VERTICAL</style>
+                                    </object>
+                                </object>
+                                <object class="sizeritem">
+                                    <flag>wxGROW|wxALL</flag>
+                                    <border>5</border>
+                                    <option>1</option>
+                                    <object class="wxBoxSizer">
+                                        <orient>wxVERTICAL</orient>
+                                        <object class="sizeritem">
+                                            <flag>wxGROW|wxALL</flag>
+                                            <border>5</border>
+                                            <object class="wxRadioBox" name="ID_RADIOBOX27">
+                                                <style>wxRA_SPECIFY_COLS</style>
+                                                <label>UAC level</label>
+                                                <dimension>1</dimension>
+                                                <selection>0</selection>
+                                                <content>
+                                                    <item>&amp;Raise</item>
+                                                    <item>&amp;Lower</item>
+                                                </content>
+                                            </object>
+                                        </object>
+                                    </object>
+                                </object>
+                            </object>
+                        </object>
+                    </object>
+                    <object class="notebookpage">
+                        <label>UI Tweaks</label>
+                        <object class="wxPanel" name="ID_PANEL2">
+                            <style>wxSUNKEN_BORDER|wxTAB_TRAVERSAL</style>
+                            <exstyle>wxWS_EX_VALIDATE_RECURSIVELY</exstyle>
+                            <object class="wxBoxSizer">
+                                <orient>wxHORIZONTAL</orient>
+                                <object class="sizeritem">
+                                    <flag>wxGROW|wxALL</flag>
+                                    <border>5</border>
+                                    <option>1</option>
+                                    <object class="wxBoxSizer">
+                                        <orient>wxVERTICAL</orient>
+                                        <object class="sizeritem">
+                                            <flag>wxALIGN_LEFT|wxALL</flag>
+                                            <border>5</border>
+                                            <object class="wxCheckBox" name="ID_CHECKBOX">
+                                                <label>Show Search button / box</label>
+                                                <checked>0</checked>
+                                            </object>
+                                        </object>
+                                        <object class="sizeritem">
+                                            <flag>wxALIGN_LEFT|wxALL</flag>
+                                            <border>5</border>
+                                            <object class="wxCheckBox" name="ID_CHECKBOX1">
+                                                <label>Show Task View button</label>
+                                                <checked>0</checked>
+                                            </object>
+                                        </object>
+                                        <object class="sizeritem">
+                                            <flag>wxALIGN_LEFT|wxALL</flag>
+                                            <border>5</border>
+                                            <object class="wxCheckBox" name="ID_CHECKBOX2">
+                                                <label>Show large icons in taskbar</label>
+                                                <checked>0</checked>
+                                            </object>
+                                        </object>
+                                        <object class="sizeritem">
+                                            <flag>wxALIGN_LEFT|wxALL</flag>
+                                            <border>5</border>
+                                            <object class="wxCheckBox" name="ID_CHECKBOX3">
+                                                <label>Show titles in taskbar</label>
+                                                <checked>0</checked>
+                                            </object>
+                                        </object>
+                                        <object class="sizeritem">
+                                            <flag>wxALIGN_LEFT|wxALL</flag>
+                                            <border>5</border>
+                                            <object class="wxCheckBox" name="ID_CHECKBOX4">
+                                                <label>Show all tray icons</label>
+                                                <checked>0</checked>
+                                            </object>
+                                        </object>
+                                        <object class="sizeritem">
+                                            <flag>wxALIGN_LEFT|wxALL</flag>
+                                            <border>5</border>
+                                            <object class="wxCheckBox" name="ID_CHECKBOX5">
+                                                <label>Show known file extensions</label>
+                                                <checked>0</checked>
+                                            </object>
+                                        </object>
+                                        <object class="sizeritem">
+                                            <flag>wxALIGN_LEFT|wxALL</flag>
+                                            <border>5</border>
+                                            <object class="wxCheckBox" name="ID_CHECKBOX6">
+                                                <label>Show hidden files</label>
+                                                <checked>0</checked>
+                                            </object>
+                                        </object>
+                                        <object class="sizeritem">
+                                            <flag>wxALIGN_LEFT|wxALL</flag>
+                                            <border>5</border>
+                                            <object class="wxCheckBox" name="ID_CHECKBOX7">
+                                                <label>Change default Explorer view to "Computer"</label>
+                                                <checked>0</checked>
+                                            </object>
+                                        </object>
+                                        <object class="sizeritem">
+                                            <flag>wxALIGN_LEFT|wxALL</flag>
+                                            <border>5</border>
+                                            <object class="wxCheckBox" name="ID_CHECKBOX8">
+                                                <label>Show Computer shortcut on desktop</label>
+                                                <checked>0</checked>
+                                            </object>
+                                        </object>
+                                        <object class="sizeritem">
+                                            <flag>wxGROW|wxALL</flag>
+                                            <border>5</border>
+                                            <object class="wxStaticLine" name="wxID_STATIC">
+                                                <style>wxLI_HORIZONTAL</style>
+                                            </object>
+                                        </object>
+                                        <object class="sizeritem">
+                                            <flag>wxALIGN_LEFT|wxALL</flag>
+                                            <border>5</border>
+                                            <object class="wxCheckBox" name="ID_CHECKBOX9">
+                                                <label>Add Desktop icon to computer namespace</label>
+                                                <checked>0</checked>
+                                            </object>
+                                        </object>
+                                        <object class="sizeritem">
+                                            <flag>wxALIGN_LEFT|wxALL</flag>
+                                            <border>5</border>
+                                            <object class="wxCheckBox" name="ID_CHECKBOX10">
+                                                <label>Add Documents icon to computer namespace</label>
+                                                <checked>0</checked>
+                                            </object>
+                                        </object>
+                                        <object class="sizeritem">
+                                            <flag>wxALIGN_LEFT|wxALL</flag>
+                                            <border>5</border>
+                                            <object class="wxCheckBox" name="ID_CHECKBOX11">
+                                                <label>Add Downloads icon to computer namespace</label>
+                                                <checked>0</checked>
+                                            </object>
+                                        </object>
+                                        <object class="sizeritem">
+                                            <flag>wxALIGN_LEFT|wxALL</flag>
+                                            <border>5</border>
+                                            <object class="wxCheckBox" name="ID_CHECKBOX12">
+                                                <label>Add Music icon to computer namespace</label>
+                                                <checked>0</checked>
+                                            </object>
+                                        </object>
+                                        <object class="sizeritem">
+                                            <flag>wxALIGN_LEFT|wxALL</flag>
+                                            <border>5</border>
+                                            <object class="wxCheckBox" name="ID_CHECKBOX13">
+                                                <label>Add Pictures icon to computer namespace</label>
+                                                <checked>0</checked>
+                                            </object>
+                                        </object>
+                                        <object class="sizeritem">
+                                            <flag>wxALIGN_LEFT|wxALL</flag>
+                                            <border>5</border>
+                                            <object class="wxCheckBox" name="ID_CHECKBOX14">
+                                                <label>Add Videos icon to computer namespace</label>
+                                                <checked>0</checked>
+                                            </object>
+                                        </object>
+                                    </object>
+                                </object>
+                                <object class="sizeritem">
+                                    <flag>wxGROW|wxALL</flag>
+                                    <border>5</border>
+                                    <object class="wxStaticLine" name="wxID_STATIC">
+                                        <style>wxLI_VERTICAL</style>
+                                    </object>
+                                </object>
+                                <object class="sizeritem">
+                                    <flag>wxGROW|wxALL</flag>
+                                    <border>5</border>
+                                    <option>1</option>
+                                    <object class="wxBoxSizer">
+                                        <orient>wxVERTICAL</orient>
+                                        <object class="sizeritem">
+                                            <flag>wxGROW|wxALL</flag>
+                                            <border>5</border>
+                                            <object class="wxCheckBox" name="ID_CHECKBOX33">
+                                                <label>Action Center</label>
+                                                <checked>0</checked>
+                                            </object>
+                                        </object>
+                                        <object class="sizeritem">
+                                            <flag>wxGROW|wxALL</flag>
+                                            <border>5</border>
+                                            <object class="wxCheckBox" name="ID_CHECKBOX34">
+                                                <label>Lock Screen</label>
+                                                <checked>0</checked>
+                                            </object>
+                                        </object>
+                                        <object class="sizeritem">
+                                            <flag>wxGROW|wxALL</flag>
+                                            <border>5</border>
+                                            <object class="wxCheckBox" name="ID_CHECKBOX35">
+                                                <label>Autoplay</label>
+                                                <checked>0</checked>
+                                            </object>
+                                        </object>
+                                        <object class="sizeritem">
+                                            <flag>wxGROW|wxALL</flag>
+                                            <border>5</border>
+                                            <object class="wxCheckBox" name="ID_CHECKBOX36">
+                                                <label>Autorun</label>
+                                                <checked>0</checked>
+                                            </object>
+                                        </object>
+                                        <object class="sizeritem">
+                                            <flag>wxGROW|wxALL</flag>
+                                            <border>5</border>
+                                            <object class="wxCheckBox" name="ID_CHECKBOX37">
+                                                <label>Sticky keys prompt</label>
+                                                <checked>0</checked>
+                                            </object>
+                                        </object>
+                                    </object>
+                                </object>
+                            </object>
+                        </object>
+                    </object>
+                    <object class="notebookpage">
+                        <label>Remove applications</label>
+                        <object class="wxPanel" name="ID_PANEL3">
+                            <style>wxSUNKEN_BORDER|wxTAB_TRAVERSAL</style>
+                            <exstyle>wxWS_EX_VALIDATE_RECURSIVELY</exstyle>
+                            <object class="wxBoxSizer">
+                                <orient>wxVERTICAL</orient>
+                                <object class="sizeritem">
+                                    <flag>wxGROW|wxALL</flag>
+                                    <border>5</border>
+                                    <object class="wxRadioBox" name="ID_RADIOBOX21">
+                                        <style>wxRA_SPECIFY_COLS</style>
+                                        <label>OneDrive</label>
+                                        <dimension>1</dimension>
+                                        <selection>0</selection>
+                                        <content>
+                                            <item>&amp;Install and Enable</item>
+                                            <item>&amp;Uninstall</item>
+                                        </content>
+                                    </object>
+                                </object>
+                                <object class="sizeritem">
+                                    <flag>wxGROW|wxALL</flag>
+                                    <border>5</border>
+                                    <object class="wxRadioBox" name="ID_RADIOBOX1">
+                                        <style>wxRA_SPECIFY_COLS</style>
+                                        <label>Windows Media Player</label>
+                                        <dimension>1</dimension>
+                                        <selection>0</selection>
+                                        <content>
+                                            <item>&amp;Install and Enable</item>
+                                            <item>&amp;Uninstall</item>
+                                        </content>
+                                    </object>
+                                </object>
+                                <object class="sizeritem">
+                                    <flag>wxGROW|wxALL</flag>
+                                    <border>5</border>
+                                    <object class="wxRadioBox" name="ID_RADIOBOX">
+                                        <style>wxRA_SPECIFY_COLS</style>
+                                        <label>Work Folders Client</label>
+                                        <dimension>1</dimension>
+                                        <selection>0</selection>
+                                        <content>
+                                            <item>&amp;Install and Enable</item>
+                                            <item>&amp;Uninstall</item>
+                                        </content>
+                                    </object>
+                                </object>
+                            </object>
+                        </object>
+                    </object>
+                    <object platform="unix" class="notebookpage">
+                        <label>Default Applications</label>
+                        <object platform="unix" class="wxPanel" name="ID_PANEL4">
+                            <style>wxSUNKEN_BORDER|wxTAB_TRAVERSAL</style>
+                            <exstyle>wxWS_EX_VALIDATE_RECURSIVELY</exstyle>
+                            <hidden>1</hidden>
+                            <object class="wxBoxSizer">
+                                <orient>wxHORIZONTAL</orient>
+                                <object class="sizeritem">
+                                    <flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                    <border>5</border>
+                                    <object class="wxNotebook" name="ID_NOTEBOOK1">
+                                        <style>wxBK_DEFAULT</style>
+                                        <object class="notebookpage">
+                                            <label>Default Apps</label>
+                                            <object class="wxPanel" name="ID_PANEL5">
+                                                <style>wxSUNKEN_BORDER|wxTAB_TRAVERSAL</style>
+                                                <exstyle>wxWS_EX_VALIDATE_RECURSIVELY</exstyle>
+                                                <object class="wxBoxSizer">
+                                                    <orient>wxHORIZONTAL</orient>
+                                                    <object class="sizeritem">
+                                                        <flag>wxGROW|wxALL</flag>
+                                                        <border>5</border>
+                                                        <option>1</option>
+                                                        <object class="wxBoxSizer">
+                                                            <orient>wxVERTICAL</orient>
+                                                            <object class="sizeritem">
+                                                                <flag>wxGROW|wxALL</flag>
+                                                                <border>5</border>
+                                                                <object class="wxRadioBox" name="ID_RADIOBOX18">
+                                                                    <style>wxRA_SPECIFY_ROWS</style>
+                                                                    <label>3DBuilder</label>
+                                                                    <dimension>1</dimension>
+                                                                    <selection>0</selection>
+                                                                    <content>
+                                                                        <item>&amp;Install</item>
+                                                                        <item>&amp;Unistall</item>
+                                                                        <item>&amp;Don't touch</item>
+                                                                    </content>
+                                                                </object>
+                                                            </object>
+                                                            <object class="sizeritem">
+                                                                <flag>wxGROW|wxALL</flag>
+                                                                <border>5</border>
+                                                                <object class="wxRadioBox" name="ID_RADIOBOX19">
+                                                                    <style>wxRA_SPECIFY_ROWS</style>
+                                                                    <label>Bing Finance</label>
+                                                                    <dimension>1</dimension>
+                                                                    <selection>0</selection>
+                                                                    <content>
+                                                                        <item>&amp;Install</item>
+                                                                        <item>&amp;Unistall</item>
+                                                                        <item>&amp;Don't touch</item>
+                                                                    </content>
+                                                                </object>
+                                                            </object>
+                                                            <object class="sizeritem">
+                                                                <flag>wxGROW|wxALL</flag>
+                                                                <border>5</border>
+                                                                <object class="wxRadioBox" name="ID_RADIOBOX20">
+                                                                    <style>wxRA_SPECIFY_ROWS</style>
+                                                                    <label>Bing News</label>
+                                                                    <dimension>1</dimension>
+                                                                    <selection>0</selection>
+                                                                    <content>
+                                                                        <item>&amp;Install</item>
+                                                                        <item>&amp;Unistall</item>
+                                                                        <item>&amp;Don't touch</item>
+                                                                    </content>
+                                                                </object>
+                                                            </object>
+                                                            <object class="sizeritem">
+                                                                <flag>wxGROW|wxALL</flag>
+                                                                <border>5</border>
+                                                                <object class="wxRadioBox" name="ID_RADIOBOX22">
+                                                                    <style>wxRA_SPECIFY_ROWS</style>
+                                                                    <label>Bing Sports</label>
+                                                                    <dimension>1</dimension>
+                                                                    <selection>0</selection>
+                                                                    <content>
+                                                                        <item>&amp;Install</item>
+                                                                        <item>&amp;Unistall</item>
+                                                                        <item>&amp;Don't touch</item>
+                                                                    </content>
+                                                                </object>
+                                                            </object>
+                                                            <object class="sizeritem">
+                                                                <flag>wxGROW|wxALL</flag>
+                                                                <border>5</border>
+                                                                <object class="wxRadioBox" name="ID_RADIOBOX23">
+                                                                    <style>wxRA_SPECIFY_ROWS</style>
+                                                                    <label>Bing Weather</label>
+                                                                    <dimension>1</dimension>
+                                                                    <selection>0</selection>
+                                                                    <content>
+                                                                        <item>&amp;Install</item>
+                                                                        <item>&amp;Unistall</item>
+                                                                        <item>&amp;Don't touch</item>
+                                                                    </content>
+                                                                </object>
+                                                            </object>
+                                                            <object class="sizeritem">
+                                                                <flag>wxGROW|wxALL</flag>
+                                                                <border>5</border>
+                                                                <object class="wxRadioBox" name="ID_RADIOBOX24">
+                                                                    <style>wxRA_SPECIFY_ROWS</style>
+                                                                    <label>Get Started</label>
+                                                                    <dimension>1</dimension>
+                                                                    <selection>0</selection>
+                                                                    <content>
+                                                                        <item>&amp;Install</item>
+                                                                        <item>&amp;Unistall</item>
+                                                                        <item>&amp;Don't touch</item>
+                                                                    </content>
+                                                                </object>
+                                                            </object>
+                                                            <object class="sizeritem">
+                                                                <flag>wxGROW|wxALL</flag>
+                                                                <border>5</border>
+                                                                <object class="wxRadioBox" name="ID_RADIOBOX25">
+                                                                    <style>wxRA_SPECIFY_ROWS</style>
+                                                                    <label>Microsoft Office Hub</label>
+                                                                    <dimension>1</dimension>
+                                                                    <selection>0</selection>
+                                                                    <content>
+                                                                        <item>&amp;Install</item>
+                                                                        <item>&amp;Unistall</item>
+                                                                        <item>&amp;Don't touch</item>
+                                                                    </content>
+                                                                </object>
+                                                            </object>
+                                                        </object>
+                                                    </object>
+                                                    <object class="sizeritem">
+                                                        <flag>wxGROW|wxALL</flag>
+                                                        <border>5</border>
+                                                        <object class="wxStaticLine" name="wxID_STATIC">
+                                                            <style>wxLI_VERTICAL</style>
+                                                        </object>
+                                                    </object>
+                                                    <object class="sizeritem">
+                                                        <flag>wxGROW|wxALL</flag>
+                                                        <border>5</border>
+                                                        <option>1</option>
+                                                        <object class="wxBoxSizer">
+                                                            <orient>wxVERTICAL</orient>
+                                                            <object class="sizeritem">
+                                                                <flag>wxGROW|wxALL</flag>
+                                                                <border>5</border>
+                                                                <object class="wxRadioBox" name="ID_RADIOBOX26">
+                                                                    <style>wxRA_SPECIFY_ROWS</style>
+                                                                    <label>Microsoft Solitaire Collection</label>
+                                                                    <dimension>1</dimension>
+                                                                    <selection>0</selection>
+                                                                    <content>
+                                                                        <item>&amp;Install</item>
+                                                                        <item>&amp;Unistall</item>
+                                                                        <item>&amp;Don't touch</item>
+                                                                    </content>
+                                                                </object>
+                                                            </object>
+                                                            <object class="sizeritem">
+                                                                <flag>wxGROW|wxALL</flag>
+                                                                <border>5</border>
+                                                                <object class="wxRadioBox" name="ID_RADIOBOX36">
+                                                                    <style>wxRA_SPECIFY_ROWS</style>
+                                                                    <label>Microsoft People</label>
+                                                                    <dimension>1</dimension>
+                                                                    <selection>0</selection>
+                                                                    <content>
+                                                                        <item>&amp;Install</item>
+                                                                        <item>&amp;Unistall</item>
+                                                                        <item>&amp;Don't touch</item>
+                                                                    </content>
+                                                                </object>
+                                                            </object>
+                                                            <object class="sizeritem">
+                                                                <flag>wxGROW|wxALL</flag>
+                                                                <border>5</border>
+                                                                <object class="wxRadioBox" name="ID_RADIOBOX35">
+                                                                    <style>wxRA_SPECIFY_ROWS</style>
+                                                                    <label>Microsoft Office One Note</label>
+                                                                    <dimension>1</dimension>
+                                                                    <selection>0</selection>
+                                                                    <content>
+                                                                        <item>&amp;Install</item>
+                                                                        <item>&amp;Unistall</item>
+                                                                        <item>&amp;Don't touch</item>
+                                                                    </content>
+                                                                </object>
+                                                            </object>
+                                                            <object class="sizeritem">
+                                                                <flag>wxGROW|wxALL</flag>
+                                                                <border>5</border>
+                                                                <object class="wxRadioBox" name="ID_RADIOBOX37">
+                                                                    <style>wxRA_SPECIFY_ROWS</style>
+                                                                    <label>Microsoft Skype App</label>
+                                                                    <dimension>1</dimension>
+                                                                    <selection>0</selection>
+                                                                    <content>
+                                                                        <item>&amp;Install</item>
+                                                                        <item>&amp;Unistall</item>
+                                                                        <item>&amp;Don't touch</item>
+                                                                    </content>
+                                                                </object>
+                                                            </object>
+                                                            <object class="sizeritem">
+                                                                <flag>wxGROW|wxALL</flag>
+                                                                <border>5</border>
+                                                                <object class="wxRadioBox" name="ID_RADIOBOX38">
+                                                                    <style>wxRA_SPECIFY_ROWS</style>
+                                                                    <label>Microsoft Windows Photos</label>
+                                                                    <dimension>1</dimension>
+                                                                    <selection>0</selection>
+                                                                    <content>
+                                                                        <item>&amp;Install</item>
+                                                                        <item>&amp;Unistall</item>
+                                                                        <item>&amp;Don't touch</item>
+                                                                    </content>
+                                                                </object>
+                                                            </object>
+                                                            <object class="sizeritem">
+                                                                <flag>wxGROW|wxALL</flag>
+                                                                <border>5</border>
+                                                                <object class="wxRadioBox" name="ID_RADIOBOX39">
+                                                                    <style>wxRA_SPECIFY_ROWS</style>
+                                                                    <label>Microsoft Windows Alarms</label>
+                                                                    <dimension>1</dimension>
+                                                                    <selection>0</selection>
+                                                                    <content>
+                                                                        <item>&amp;Install</item>
+                                                                        <item>&amp;Unistall</item>
+                                                                        <item>&amp;Don't touch</item>
+                                                                    </content>
+                                                                </object>
+                                                            </object>
+                                                            <object class="sizeritem">
+                                                                <flag>wxGROW|wxALL</flag>
+                                                                <border>5</border>
+                                                                <object class="wxRadioBox" name="ID_RADIOBOX40">
+                                                                    <style>wxRA_SPECIFY_ROWS</style>
+                                                                    <label>Microsoft Windows Camera</label>
+                                                                    <dimension>1</dimension>
+                                                                    <selection>0</selection>
+                                                                    <content>
+                                                                        <item>&amp;Install</item>
+                                                                        <item>&amp;Unistall</item>
+                                                                        <item>&amp;Don't touch</item>
+                                                                    </content>
+                                                                </object>
+                                                            </object>
+                                                        </object>
+                                                    </object>
+                                                </object>
+                                            </object>
+                                        </object>
+                                        <object class="notebookpage">
+                                            <label>More</label>
+                                            <object class="wxPanel" name="ID_PANEL6">
+                                                <style>wxSUNKEN_BORDER|wxTAB_TRAVERSAL</style>
+                                                <exstyle>wxWS_EX_VALIDATE_RECURSIVELY</exstyle>
+                                                <object class="wxBoxSizer">
+                                                    <orient>wxHORIZONTAL</orient>
+                                                    <object class="sizeritem">
+                                                        <flag>wxGROW|wxALL</flag>
+                                                        <border>5</border>
+                                                        <object class="wxBoxSizer">
+                                                            <orient>wxVERTICAL</orient>
+                                                            <object class="sizeritem">
+                                                                <flag>wxGROW|wxALL</flag>
+                                                                <border>5</border>
+                                                                <object class="wxRadioBox" name="ID_RADIOBOX41">
+                                                                    <style>wxRA_SPECIFY_ROWS</style>
+                                                                    <label>Microsoft Windows Communications Apps</label>
+                                                                    <dimension>1</dimension>
+                                                                    <selection>0</selection>
+                                                                    <content>
+                                                                        <item>&amp;Install</item>
+                                                                        <item>&amp;Unistall</item>
+                                                                        <item>&amp;Don't touch</item>
+                                                                    </content>
+                                                                </object>
+                                                            </object>
+                                                            <object class="sizeritem">
+                                                                <flag>wxGROW|wxALL</flag>
+                                                                <border>5</border>
+                                                                <object class="wxRadioBox" name="ID_RADIOBOX42">
+                                                                    <style>wxRA_SPECIFY_ROWS</style>
+                                                                    <label>Microsoft Windows Maps</label>
+                                                                    <dimension>1</dimension>
+                                                                    <selection>0</selection>
+                                                                    <content>
+                                                                        <item>&amp;Install</item>
+                                                                        <item>&amp;Unistall</item>
+                                                                        <item>&amp;Don't touch</item>
+                                                                    </content>
+                                                                </object>
+                                                            </object>
+                                                            <object class="sizeritem">
+                                                                <flag>wxGROW|wxALL</flag>
+                                                                <border>5</border>
+                                                                <object class="wxRadioBox" name="ID_RADIOBOX43">
+                                                                    <style>wxRA_SPECIFY_ROWS</style>
+                                                                    <label>Microsoft Windows Phone</label>
+                                                                    <dimension>1</dimension>
+                                                                    <selection>0</selection>
+                                                                    <content>
+                                                                        <item>&amp;Install</item>
+                                                                        <item>&amp;Unistall</item>
+                                                                        <item>&amp;Don't touch</item>
+                                                                    </content>
+                                                                </object>
+                                                            </object>
+                                                            <object class="sizeritem">
+                                                                <flag>wxGROW|wxALL</flag>
+                                                                <border>5</border>
+                                                                <object class="wxRadioBox" name="ID_RADIOBOX44">
+                                                                    <style>wxRA_SPECIFY_ROWS</style>
+                                                                    <label>Microsoft Windows Sound Recorder</label>
+                                                                    <dimension>1</dimension>
+                                                                    <selection>0</selection>
+                                                                    <content>
+                                                                        <item>&amp;Install</item>
+                                                                        <item>&amp;Unistall</item>
+                                                                        <item>&amp;Don't touch</item>
+                                                                    </content>
+                                                                </object>
+                                                            </object>
+                                                            <object class="sizeritem">
+                                                                <flag>wxGROW|wxALL</flag>
+                                                                <border>5</border>
+                                                                <object class="wxRadioBox" name="ID_RADIOBOX45">
+                                                                    <style>wxRA_SPECIFY_ROWS</style>
+                                                                    <label>Microsoft XBox App</label>
+                                                                    <dimension>1</dimension>
+                                                                    <selection>0</selection>
+                                                                    <content>
+                                                                        <item>&amp;Install</item>
+                                                                        <item>&amp;Unistall</item>
+                                                                        <item>&amp;Don't touch</item>
+                                                                    </content>
+                                                                </object>
+                                                            </object>
+                                                            <object class="sizeritem">
+                                                                <flag>wxGROW|wxALL</flag>
+                                                                <border>5</border>
+                                                                <object class="wxRadioBox" name="ID_RADIOBOX46">
+                                                                    <style>wxRA_SPECIFY_ROWS</style>
+                                                                    <label>Microsoft Zune Music</label>
+                                                                    <dimension>1</dimension>
+                                                                    <selection>0</selection>
+                                                                    <content>
+                                                                        <item>&amp;Install</item>
+                                                                        <item>&amp;Unistall</item>
+                                                                        <item>&amp;Don't touch</item>
+                                                                    </content>
+                                                                </object>
+                                                            </object>
+                                                            <object class="sizeritem">
+                                                                <flag>wxGROW|wxALL</flag>
+                                                                <border>5</border>
+                                                                <object class="wxRadioBox" name="ID_RADIOBOX47">
+                                                                    <style>wxRA_SPECIFY_ROWS</style>
+                                                                    <label>Microsoft Zune Video</label>
+                                                                    <dimension>1</dimension>
+                                                                    <selection>0</selection>
+                                                                    <content>
+                                                                        <item>&amp;Install</item>
+                                                                        <item>&amp;Unistall</item>
+                                                                        <item>&amp;Don't touch</item>
+                                                                    </content>
+                                                                </object>
+                                                            </object>
+                                                        </object>
+                                                    </object>
+                                                    <object class="sizeritem">
+                                                        <flag>wxGROW|wxALL</flag>
+                                                        <border>5</border>
+                                                        <object class="wxStaticLine" name="wxID_STATIC">
+                                                            <style>wxLI_VERTICAL</style>
+                                                        </object>
+                                                    </object>
+                                                    <object class="sizeritem">
+                                                        <flag>wxGROW|wxALL</flag>
+                                                        <border>5</border>
+                                                        <object class="wxBoxSizer">
+                                                            <orient>wxVERTICAL</orient>
+                                                            <object class="sizeritem">
+                                                                <flag>wxGROW|wxALL</flag>
+                                                                <border>5</border>
+                                                                <object class="wxRadioBox" name="ID_RADIOBOX48">
+                                                                    <style>wxRA_SPECIFY_ROWS</style>
+                                                                    <label>Microsoft App Connector</label>
+                                                                    <dimension>1</dimension>
+                                                                    <selection>0</selection>
+                                                                    <content>
+                                                                        <item>&amp;Install</item>
+                                                                        <item>&amp;Unistall</item>
+                                                                        <item>&amp;Don't touch</item>
+                                                                    </content>
+                                                                </object>
+                                                            </object>
+                                                            <object class="sizeritem">
+                                                                <flag>wxGROW|wxALL</flag>
+                                                                <border>5</border>
+                                                                <object class="wxRadioBox" name="ID_RADIOBOX13">
+                                                                    <style>wxRA_SPECIFY_ROWS</style>
+                                                                    <label>Microsoft Connectivity Store</label>
+                                                                    <dimension>1</dimension>
+                                                                    <selection>0</selection>
+                                                                    <content>
+                                                                        <item>&amp;Install</item>
+                                                                        <item>&amp;Unistall</item>
+                                                                        <item>&amp;Don't touch</item>
+                                                                    </content>
+                                                                </object>
+                                                            </object>
+                                                            <object class="sizeritem">
+                                                                <flag>wxGROW|wxALL</flag>
+                                                                <border>5</border>
+                                                                <object class="wxRadioBox" name="ID_RADIOBOX49">
+                                                                    <style>wxRA_SPECIFY_ROWS</style>
+                                                                    <label>Microsoft Office Sway</label>
+                                                                    <dimension>1</dimension>
+                                                                    <selection>0</selection>
+                                                                    <content>
+                                                                        <item>&amp;Install</item>
+                                                                        <item>&amp;Unistall</item>
+                                                                        <item>&amp;Don't touch</item>
+                                                                    </content>
+                                                                </object>
+                                                            </object>
+                                                            <object class="sizeritem">
+                                                                <flag>wxGROW|wxALL</flag>
+                                                                <border>5</border>
+                                                                <object class="wxRadioBox" name="ID_RADIOBOX50">
+                                                                    <style>wxRA_SPECIFY_ROWS</style>
+                                                                    <label>Microsoft Messaging</label>
+                                                                    <dimension>1</dimension>
+                                                                    <selection>0</selection>
+                                                                    <content>
+                                                                        <item>&amp;Install</item>
+                                                                        <item>&amp;Unistall</item>
+                                                                        <item>&amp;Don't touch</item>
+                                                                    </content>
+                                                                </object>
+                                                            </object>
+                                                            <object class="sizeritem">
+                                                                <flag>wxGROW|wxALL</flag>
+                                                                <border>5</border>
+                                                                <object class="wxRadioBox" name="ID_RADIOBOX51">
+                                                                    <style>wxRA_SPECIFY_ROWS</style>
+                                                                    <label>Microsoft Comms Phone</label>
+                                                                    <dimension>1</dimension>
+                                                                    <selection>0</selection>
+                                                                    <content>
+                                                                        <item>&amp;Install</item>
+                                                                        <item>&amp;Unistall</item>
+                                                                        <item>&amp;Don't touch</item>
+                                                                    </content>
+                                                                </object>
+                                                            </object>
+                                                            <object class="sizeritem">
+                                                                <flag>wxGROW|wxALL</flag>
+                                                                <border>5</border>
+                                                                <object class="wxRadioBox" name="ID_RADIOBOX52">
+                                                                    <style>wxRA_SPECIFY_ROWS</style>
+                                                                    <label>Twitter</label>
+                                                                    <dimension>1</dimension>
+                                                                    <selection>0</selection>
+                                                                    <content>
+                                                                        <item>&amp;Install</item>
+                                                                        <item>&amp;Unistall</item>
+                                                                        <item>&amp;Don't touch</item>
+                                                                    </content>
+                                                                </object>
+                                                            </object>
+                                                            <object class="sizeritem">
+                                                                <flag>wxGROW|wxALL</flag>
+                                                                <border>5</border>
+                                                                <object class="wxRadioBox" name="ID_RADIOBOX53">
+                                                                    <style>wxRA_SPECIFY_ROWS</style>
+                                                                    <label>Candy Crush Soda Saga</label>
+                                                                    <dimension>1</dimension>
+                                                                    <selection>0</selection>
+                                                                    <content>
+                                                                        <item>&amp;Install</item>
+                                                                        <item>&amp;Unistall</item>
+                                                                        <item>&amp;Don't touch</item>
+                                                                    </content>
+                                                                </object>
+                                                            </object>
+                                                        </object>
+                                                    </object>
+                                                </object>
+                                            </object>
+                                        </object>
+                                    </object>
+                                </object>
+                            </object>
+                        </object>
+                    </object>
+                </object>
+            </object>
+            <object class="sizeritem">
+                <flag>wxALIGN_RIGHT|wxALL</flag>
+                <border>5</border>
+                <object class="wxStdDialogButtonSizer">
+                    <object class="button">
+                        <flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+                        <border>5</border>
+                        <object class="wxButton" name="wxID_OK">
+                            <label>&amp;OK</label>
+                            <XRCED>
+                                <events>EVT_BUTTON</events>
+                            </XRCED>
+                        </object>
+                    </object>
+                    <object class="button">
+                        <flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+                        <border>5</border>
+                        <object class="wxButton" name="wxID_CANCEL">
+                            <label>&amp;Cancel</label>
+                            <XRCED>
+                                <events>EVT_BUTTON</events>
+                            </XRCED>
+                        </object>
+                    </object>
+                </object>
+            </object>
+        </object>
+    </object>
+</resource>

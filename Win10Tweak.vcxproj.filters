@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="win10tweak.cpp" />
+    <ClCompile Include="win10tweakapp.cpp" />
+    <ClCompile Include="Load\LoadBase.cpp">
+      <Filter>Load</Filter>
+    </ClCompile>
+    <ClCompile Include="Load\PrivacySettingsLoad.cpp">
+      <Filter>Load</Filter>
+    </ClCompile>
+    <ClCompile Include="Load\ServiceTweaksLoad.cpp">
+      <Filter>Load</Filter>
+    </ClCompile>
+    <ClCompile Include="Load\UITweaksLoad.cpp">
+      <Filter>Load</Filter>
+    </ClCompile>
+    <ClCompile Include="Save\PrivacySettingsSave.cpp">
+      <Filter>Save</Filter>
+    </ClCompile>
+    <ClCompile Include="Save\SaveBase.cpp">
+      <Filter>Save</Filter>
+    </ClCompile>
+    <ClCompile Include="Save\ServiceTweaksSave.cpp">
+      <Filter>Save</Filter>
+    </ClCompile>
+    <ClCompile Include="Save\UITweaksSave.cpp">
+      <Filter>Save</Filter>
+    </ClCompile>
+    <ClCompile Include="resource.cpp" />
+    <ClCompile Include="Save\RemoveApplicationSave.cpp">
+      <Filter>Save</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadSaveBase.cpp" />
+    <ClCompile Include="Load\RemoveApplicationLoad.cpp">
+      <Filter>Load</Filter>
+    </ClCompile>
+    <ClCompile Include="Settings\Settings.cpp">
+      <Filter>Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="app_resources.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="win10tweak.hpp" />
+    <ClInclude Include="win10tweakapp.hpp" />
+    <ClInclude Include="Load\LoadBase.hpp">
+      <Filter>Load</Filter>
+    </ClInclude>
+    <ClInclude Include="Load\PrivacySettingsLoad.hpp">
+      <Filter>Load</Filter>
+    </ClInclude>
+    <ClInclude Include="Load\ServiceTweaksLoad.hpp">
+      <Filter>Load</Filter>
+    </ClInclude>
+    <ClInclude Include="Load\UITweaksLoad.hpp">
+      <Filter>Load</Filter>
+    </ClInclude>
+    <ClInclude Include="Save\PrivacySettingsSave.hpp">
+      <Filter>Save</Filter>
+    </ClInclude>
+    <ClInclude Include="Save\SaveBase.hpp">
+      <Filter>Save</Filter>
+    </ClInclude>
+    <ClInclude Include="Save\ServiceTweaksSave.hpp">
+      <Filter>Save</Filter>
+    </ClInclude>
+    <ClInclude Include="Save\UITweaksSave.hpp">
+      <Filter>Save</Filter>
+    </ClInclude>
+    <ClInclude Include="Save\RemoveApplicationSave.hpp">
+      <Filter>Save</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadSaveBase.hpp" />
+    <ClInclude Include="Load\RemoveApplicationLoad.hpp">
+      <Filter>Load</Filter>
+    </ClInclude>
+    <ClInclude Include="Settings\Settings.hpp">
+      <Filter>Settings</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Win10Tweak.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Save">
+      <UniqueIdentifier>{20bd36ab-4d94-4274-a94a-30e57cc608bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Load">
+      <UniqueIdentifier>{f4d09ab4-c20c-4233-976c-6e41c3a4d2a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Settings">
+      <UniqueIdentifier>{df567e0c-79fa-451d-979d-510ab62ad3df}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
