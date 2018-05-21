@@ -92,4 +92,8 @@
       <UniqueIdentifier>{df567e0c-79fa-451d-979d-510ab62ad3df}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="license.txt" />
+    <Text Include="readme.txt" />
+  </ItemGroup>
 </Project>
